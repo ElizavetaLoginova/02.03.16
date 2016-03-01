@@ -2,7 +2,7 @@
 #include <string.h>
 using namespace std;
 
-void ChangeString(char*, char*, char*);
+void DeleteSubtring(char*, char*, char*);
 bool TheSame(char*, char*, int, int);
 void ReplaceSubtring(char*, char*, char*);
 
@@ -22,7 +22,7 @@ int main()
 
 		cout << "\n\t***STRING IS:***\n";
 		cout << string;
-		ChangeString(string, substring1, substring2);
+		DeleteSubtring(string, substring1, substring2);
 		cout << "\n\t***STRING IS:***\n";
 		cout << string;
 		system("pause");
@@ -59,7 +59,7 @@ void ReplaceSubtring(char* string, char* str1, char*symbols)
 {
 	int length = strspn(string, symbols);
 	str1 = string;
-	string += length;
+	string = str1 + length;
 }
 
 
