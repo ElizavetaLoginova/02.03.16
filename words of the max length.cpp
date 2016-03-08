@@ -19,8 +19,9 @@ int main()
 
 		int n;
 		n = MaxLength(string);
-		ChangeString(string, n);
 		cout << endl << "Length: " << n;
+		cout << endl << "The most long words are: " << endl;
+		ChangeString(string, n);
 		system("pause");
 
 		char yes;
